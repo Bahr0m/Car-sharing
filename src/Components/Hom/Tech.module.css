@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+.card{
+    width: 400px;
+    height: 600px;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr ;
+    justify-items: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.add_Card{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.add_btn{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+}

@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(28, 19, 37);
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border-bottom: 1px solid transparent;
+    margin:5px 0 10px;
+}
+.linkActive{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(117, 191, 244);
+    border-bottom: 1px solid rgb(116, 166, 236);
+    margin:5px 0 10px;
+}
+.sign_in{
+    display: flex;
+    align-items: center;
+
+}
+
