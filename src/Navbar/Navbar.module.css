@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.link{
+    text-decoration: none;
+    color: #717184;
+    font-size: 1.6rem;
+
+}
+.logo{
+    max-height:45px ;
+    max-width:200px ;
+    padding-top:5px;
+}
+a:hover{
+    color: rgb(9, 168, 38);
+}
+.linkActive{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color:rgb(14, 123, 34) ;
+}
+
+/* .sity{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: rgb(138, 43, 226);
+}
+.drive{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: rgb(47, 194, 93);
+} */
+

@@ -1,5 +1,5 @@
 
-import { GETITEMS,LOADER,ADD,EDIT} from "../actions"
+import { GETITEMS,LOADER,ADD,EDIT, CHECKED} from "../actions"
 
 
 const initialState = {
@@ -14,7 +14,7 @@ export const fetchReducer = (state = initialState, action) => {
         case LOADER: 
             return {...state, loading: action.payload};
         case ADD: 
-            return { ...state, items: [action.payload,...state.items] } 
+            return { ...state, items: action.payload } 
         case EDIT: 
             return {...state, items: state.items.map((item)=>{
                 if (item.id==action.payload.id) {
@@ -24,7 +24,9 @@ export const fetchReducer = (state = initialState, action) => {
                     return item;
                 } 
                 return item;
-            }) };       
+            }) };
+        case CHECKED:
+            return { ...state,items: action.payload};       
         default:
             return state;
     }
@@ -36,7 +38,13 @@ export const getItems = () => {
             dispatch({type: LOADER, payload: true})
             const response = await fetch('https://dummyjson.com/products');
             const responseJSON = await response.json();
-            dispatch({type: GETITEMS, payload: responseJSON.products})
+            const newDate = responseJSON.products
+            const dates = newDate.map((item)=> {
+                item.visible=false
+                return item;
+            })
+            console.log(dates)
+            dispatch({type: GETITEMS, payload: dates})
             dispatch({type: LOADER, payload: false})
             
         } catch(e) {
