@@ -11,32 +11,5 @@ img{
     height: 200px;
     border-radius: 50px;
 }
-.card{
-    width: 400px;
-    height: 600px;
-    display: grid;
-    grid-template-columns:1fr ;
-    grid-template-rows:1fr 1fr 1fr 1fr ;
-    justify-items: center;
-    align-items: center;
-    border-radius: 30px;
-}
-.add_Card{
 
 }
-.add_btn{
-    border: none;
-    text-align: center;
-    color:blue;
-    font-size: 2rem;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    left: 30px;
-    top:80px;
-    background-color: aliceblue;
-    border:3px solid rgb(88, 169, 234);
-    border-radius: 50%;
-
-}
-    
